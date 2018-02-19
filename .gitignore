@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+start.sh
+elm-stuff/
+npm-debug.log
+homam-local-start.sh
+ahmed-local-start.sh
+temp/
+server/auth/google_config.json
+ecosystem.config.js
