@@ -8,7 +8,9 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => res.end('hello'))
 app.post('/deploy', (req, res) => {
   console.log("deploy", req.body);
-  run('cd ~/sam/corp-site && git pull').then(console.log).catch(console.log)
+  run("sh", ["./pull.sh"])
+    .then(console.log)
+    .catch(console.error);
   res.end()
 })
 
